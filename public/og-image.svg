@@ -1,0 +1,74 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0f172a;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#1e3a5f;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0c4a6e;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#38bdf8;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#06b6d4;stop-opacity:1" />
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bgGrad)"/>
+
+  <!-- Grid pattern overlay -->
+  <defs>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="white" stroke-width="0.5" opacity="0.05"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="630" fill="url(#grid)"/>
+
+  <!-- Runway lines -->
+  <rect x="80" y="540" width="1040" height="3" rx="1.5" fill="white" opacity="0.15"/>
+  <rect x="200" y="548" width="60" height="2" fill="white" opacity="0.1"/>
+  <rect x="340" y="548" width="60" height="2" fill="white" opacity="0.1"/>
+  <rect x="480" y="548" width="60" height="2" fill="white" opacity="0.1"/>
+  <rect x="620" y="548" width="60" height="2" fill="white" opacity="0.1"/>
+  <rect x="760" y="548" width="60" height="2" fill="white" opacity="0.1"/>
+  <rect x="900" y="548" width="60" height="2" fill="white" opacity="0.1"/>
+
+  <!-- Aircraft silhouette -->
+  <g transform="translate(600, 160)" opacity="0.2">
+    <path d="M0-40 L-8-10 L-60 10 L-60 18 L-8 8 L-6 30 L-20 40 L-20 46 L0 38 L20 46 L20 40 L6 30 L8 8 L60 18 L60 10 L8-10 Z" fill="white" filter="url(#glow)"/>
+  </g>
+
+  <!-- AI circuit nodes -->
+  <circle cx="180" cy="120" r="4" fill="#38bdf8" opacity="0.6"/>
+  <circle cx="220" cy="100" r="3" fill="#38bdf8" opacity="0.4"/>
+  <line x1="180" y1="120" x2="220" y2="100" stroke="#38bdf8" stroke-width="1" opacity="0.3"/>
+  <circle cx="1000" cy="140" r="4" fill="#06b6d4" opacity="0.6"/>
+  <circle cx="1040" cy="110" r="3" fill="#06b6d4" opacity="0.4"/>
+  <line x1="1000" y1="140" x2="1040" y2="110" stroke="#06b6d4" stroke-width="1" opacity="0.3"/>
+
+  <!-- Main title -->
+  <text x="600" y="320" font-family="Arial, Helvetica, sans-serif" font-size="80" font-weight="800" fill="white" text-anchor="middle" opacity="0.95">AirportAIOps</text>
+
+  <!-- Accent underline -->
+  <rect x="360" y="340" width="480" height="4" rx="2" fill="url(#accentGrad)" opacity="0.8"/>
+
+  <!-- Subtitle -->
+  <text x="600" y="400" font-family="Arial, Helvetica, sans-serif" font-size="32" font-weight="600" fill="#38bdf8" text-anchor="middle" opacity="0.9">Airport Operations AI Intelligence</text>
+
+  <!-- Tagline -->
+  <text x="600" y="450" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="400" fill="white" text-anchor="middle" opacity="0.6">Command Center</text>
+
+  <!-- Domain -->
+  <text x="600" y="500" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="400" fill="#38bdf8" text-anchor="middle" opacity="0.5">www.airportaiops.com</text>
+
+  <!-- Decorative dots -->
+  <circle cx="150" cy="500" r="5" fill="white" opacity="0.1"/>
+  <circle cx="1050" cy="480" r="6" fill="white" opacity="0.1"/>
+  <circle cx="100" cy="200" r="4" fill="#38bdf8" opacity="0.15"/>
+  <circle cx="1100" cy="250" r="4" fill="#06b6d4" opacity="0.15"/>
+</svg>
